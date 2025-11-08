@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kalkulator">
+    <div class="layar" id="layar">0</div>
+    <div class="tombol">
+      <button onclick="tekan('7')">7</button>
+      <button onclick="tekan('8')">8</button>
+      <button onclick="tekan('9')">9</button>
+      <button class="operator" onclick="tekan('/')">÷</button>
+
+      <button onclick="tekan('4')">4</button>
+      <button onclick="tekan('5')">5</button>
+      <button onclick="tekan('6')">6</button>
+      <button class="operator" onclick="tekan('*')">×</button>
+
+      <button onclick="tekan('1')">1</button>
+      <button onclick="tekan('2')">2</button>
+      <button onclick="tekan('3')">3</button>
+      <button class="operator" onclick="tekan('-')">−</button>
+
+      <button onclick="tekan('0')">0</button>
+      <button onclick="tekan('.')">.</button>
+      <button class="hasil" onclick="hitung()">=</button>
+      <button class="operator" onclick="tekan('+')">+</button>
+
+      <button class="clear" onclick="hapus()" style="grid-column: span 4;">C</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
